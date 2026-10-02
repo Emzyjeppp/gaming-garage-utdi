@@ -1,0 +1,202 @@
+/* ==========================================================================
+   GAMING GARAGE UTDI - VALORANT AGENTS COLOR PALETTE & CORE STYLES
+   ========================================================================== */
+
+/* --- Core Valorant Theme --- */
+body {
+    background-color: #0F1923;
+    background-image:
+        radial-gradient(circle at 50% 0%, #53212B 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, #1F2326 0%, transparent 35%),
+        radial-gradient(circle at 10% 90%, #0B1015 0%, transparent 40%);
+    color: #ECE8E1;
+    overflow-x: hidden;
+}
+
+/* --- Scrollbar Styling --- */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F1923;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2B38BA;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF4655;
+}
+
+/* --- 3D & Transform Utilities --- */
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transform-style-3d {
+    transform-style: preserve-3d;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotate-y-0 {
+    transform: rotateY(0deg);
+}
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+.text-shadow-glow {
+    text-shadow: 0 0 12px rgba(255, 70, 85, 0.6);
+}
+
+.clip-path-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+.stroke-text {
+    -webkit-text-stroke: 1px rgba(236, 232, 225, 0.35);
+    color: transparent;
+}
+
+/* --- Loader Glitch Animations --- */
+.glitch-wrapper {
+    position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 #FF4655;
+    clip-path: inset(0 0 0 0);
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: -2px 0 #4BE8FF;
+    clip-path: inset(0 0 0 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% { clip-path: inset(20% 0 80% 0); }
+    20% { clip-path: inset(60% 0 10% 0); }
+    40% { clip-path: inset(40% 0 50% 0); }
+    60% { clip-path: inset(80% 0 5% 0); }
+    80% { clip-path: inset(10% 0 60% 0); }
+    100% { clip-path: inset(30% 0 30% 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip-path: inset(10% 0 60% 0); }
+    20% { clip-path: inset(30% 0 20% 0); }
+    40% { clip-path: inset(70% 0 10% 0); }
+    60% { clip-path: inset(20% 0 50% 0); }
+    80% { clip-path: inset(50% 0 30% 0); }
+    100% { clip-path: inset(0% 0 80% 0); }
+}
+
+.scan-line {
+    width: 100%;
+    height: 2px;
+    background: #FF4655;
+    box-shadow: 0 0 12px #FF4655;
+    animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* --- Marquee --- */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* --- Diagonal Wipe Effect --- */
+.diagonal-wipe {
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-wipe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: rgba(83, 33, 43, 0.95);
+    transform: skewX(-20deg) translateX(-150%);
+    transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+    z-index: 10;
+}
+
+.diagonal-wipe:hover::before {
+    transform: skewX(-20deg) translateX(-20%);
+}
+
+.wipe-content {
+    position: relative;
+    z-index: 20;
+    transition: color 0.3s;
+}
+
+/* --- Flex Accordion --- */
+.flex-accordion {
+    transition: flex 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Glassmorphism Panel (Valorant Slate) --- */
+.glass-panel {
+    background: rgba(15, 25, 35, 0.85);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(236, 232, 225, 0.12);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* --- Interactive Map Dots --- */
+.map-dot {
+    width: 6px;
+    height: 6px;
+    background: #768079;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.map-dot:hover,
+.map-dot.active {
+    background: #FF4655;
+    box-shadow: 0 0 12px #FF4655;
+    transform: scale(1.6);
+}
