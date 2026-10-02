@@ -64,8 +64,9 @@ npx serve .
 start index.html
 ```
 
-## Credits & License
+## Credits & Links
 
+- **Official Instagram**: [@gaminggarage.utdi](https://www.instagram.com/gaminggarage.utdi/)
 - **Institutions**: Fakultas Teknologi Informasi (FTI) UTDI & HP Inc.
 - **Original Template**: [Aura Build (Cinematic VFX 28)](https://www.aura.build/templates/cinematic-vfx-28)
 - **Visual Assets**: Riot Games / Valorant media kit, Lucide icons, and Google Fonts.
