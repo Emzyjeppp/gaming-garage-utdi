@@ -1,5 +1,5 @@
 /**
- * STREAX STUDIOS / GAMING GARAGE - MAIN APPLICATION SCRIPTS
+ * GAMING GARAGE UTDI - MAIN APPLICATION SCRIPTS
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,20 +73,32 @@ function initNavbarScroll() {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            nav.classList.add('py-2', 'bg-black/90');
-            nav.classList.remove('bg-black/80');
+            nav.classList.add('py-2', 'bg-[#0F1923]/95');
+            nav.classList.remove('bg-[#0F1923]/90');
         } else {
-            nav.classList.remove('py-2', 'bg-black/90');
-            nav.classList.add('bg-black/80');
+            nav.classList.remove('py-2', 'bg-[#0F1923]/95');
+            nav.classList.add('bg-[#0F1923]/90');
         }
     });
 }
 
 /**
- * 4. Interactive Elements & Card Links
+ * 4. Interactive Elements, Map Dots, & 3D Flip Cards
  */
 function initInteractiveCards() {
-    // Map dots hover/click highlight
+    // 3D Flip Cards: Click / Tap Support for Mobile and Touch Devices
+    const flipCards = document.querySelectorAll('.perspective-1000');
+    flipCards.forEach((card) => {
+        card.addEventListener('click', (e) => {
+            // Prevent flipping when clicking direct CTA links
+            if (e.target.tagName.toLowerCase() === 'a' || e.target.closest('a')) {
+                return;
+            }
+            card.classList.toggle('is-flipped');
+        });
+    });
+
+    // Map dots hover highlight
     const mapDots = document.querySelectorAll('.map-dot');
     mapDots.forEach((dot) => {
         dot.addEventListener('mouseenter', () => {

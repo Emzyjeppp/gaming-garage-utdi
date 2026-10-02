@@ -32,16 +32,18 @@ body {
     background: #FF4655;
 }
 
-/* --- 3D & Transform Utilities --- */
+/* --- 3D Flip Card System --- */
 .perspective-1000 {
     perspective: 1000px;
 }
 
 .transform-style-3d {
     transform-style: preserve-3d;
+    transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backface-hidden {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -51,6 +53,14 @@ body {
 
 .rotate-y-180 {
     transform: rotateY(180deg);
+}
+
+/* Hover & Active Flip Rules */
+.group:hover .group-hover\:rotate-y-180,
+.group:hover > .transform-style-3d,
+.group:hover .transform-style-3d,
+.group.is-flipped .transform-style-3d {
+    transform: rotateY(180deg) !important;
 }
 
 .text-shadow-glow {
