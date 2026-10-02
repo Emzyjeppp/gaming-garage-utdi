@@ -25,6 +25,21 @@ build/
 *.swp
 *.swo
 
+# Assistant local configs & prompt drafts
+.agent/
+skills/
+.cursor/
+.github/
+.clinerules
+.cursorrules
+.windsurfrules
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+RULES.md
+About.txt
+generated-page.html
+
 # Operating System files
 .DS_Store
 Thumbs.db
