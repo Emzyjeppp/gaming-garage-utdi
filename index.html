@@ -792,22 +792,30 @@
                 </a>
             </div>
 
-            <!-- Feed Grid (5 Activities) -->
+            <!-- Feed Grid (5 Activities + 1 Portal Card) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 <!-- Activity 1: Level-Up Weekend -->
-                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#FF4655]/50 transition-colors">
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-start">
-                            <span class="bg-[#53212B] border border-[#FF4655]/50 text-[#FF4655] text-[10px] font-mono px-2 py-0.5 rounded uppercase">
+                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#FF4655]/50 transition-colors">
+                    <div class="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-black/40">
+                        <img src="images/posters/poster-level-up-weekend.jpg" alt="Poster Level-Up Weekend Gaming Garage UTDI" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141C24] via-transparent to-black/30 pointer-events-none"></div>
+                        <div class="absolute top-3 left-3 right-3 flex justify-between items-center pointer-events-none">
+                            <span class="bg-[#53212B]/90 backdrop-blur-sm border border-[#FF4655]/60 text-[#FF4655] text-[10px] font-mono px-2.5 py-1 rounded uppercase font-bold tracking-wider">
                                 Tournament & Workshop
                             </span>
-                            <span class="text-[11px] font-mono text-[#768079]">23 - 24 Mei</span>
+                            <span class="bg-black/70 backdrop-blur-sm border border-white/10 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+                                23 - 24 Mei
+                            </span>
                         </div>
-                        <h3 class="text-lg font-bold text-white uppercase">Level-Up Weekend</h3>
-                        <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Turnamen esports (Mobile Legends & PES) di The Battlefield serta Workshop "Make Your Own Game in a Day with Godot Game Engine" di The Forge.
-                        </p>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white uppercase tracking-tight mb-2">Level-Up Weekend</h3>
+                            <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
+                                Turnamen esports (Mobile Legends & PES) di The Battlefield serta Workshop "Make Your Own Game in a Day with Godot Game Engine" di The Forge.
+                            </p>
+                        </div>
                         <div class="border-t border-[#ECE8E1]/10 pt-3 text-[11px] font-mono text-[#768079] space-y-1">
                             <div class="flex justify-between">
                                 <span>Hadiah:</span>
@@ -822,18 +830,26 @@
                 </div>
 
                 <!-- Activity 2: Open Recruitment Phase 2 -->
-                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#4BE8FF]/50 transition-colors">
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-start">
-                            <span class="bg-[#1B205E] border border-[#4BE8FF]/50 text-[#4BE8FF] text-[10px] font-mono px-2 py-0.5 rounded uppercase">
+                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#4BE8FF]/50 transition-colors">
+                    <div class="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-black/40">
+                        <img src="images/posters/poster-open-recruitment-2026.jpg" alt="Poster Open Recruitment Gaming Garage UTDI 2026" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141C24] via-transparent to-black/30 pointer-events-none"></div>
+                        <div class="absolute top-3 left-3 right-3 flex justify-between items-center pointer-events-none">
+                            <span class="bg-[#1B205E]/90 backdrop-blur-sm border border-[#4BE8FF]/60 text-[#4BE8FF] text-[10px] font-mono px-2.5 py-1 rounded uppercase font-bold tracking-wider">
                                 Recruitment
                             </span>
-                            <span class="text-[11px] font-mono text-[#768079]">9 - 17 April 2026</span>
+                            <span class="bg-black/70 backdrop-blur-sm border border-white/10 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+                                9 - 17 April 2026
+                            </span>
                         </div>
-                        <h3 class="text-lg font-bold text-white uppercase">Open Recruitment Divisi</h3>
-                        <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Penerimaan anggota baru untuk divisi Player Esport (Mobile Legends, Valorant, Tekken, PES), Game Developer, Social Media, dan Event Organizer.
-                        </p>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white uppercase tracking-tight mb-2">Open Recruitment Divisi</h3>
+                            <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
+                                Penerimaan anggota baru untuk divisi Player Esport (Mobile Legends, Valorant, Tekken, PES), Game Developer, Social Media, dan Event Organizer.
+                            </p>
+                        </div>
                         <div class="border-t border-[#ECE8E1]/10 pt-3 text-[11px] font-mono text-[#768079] space-y-1">
                             <div class="flex justify-between">
                                 <span>Target:</span>
@@ -848,18 +864,26 @@
                 </div>
 
                 <!-- Activity 3: Fun Tournament Gaming Garage -->
-                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#B59A57]/50 transition-colors">
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-start">
-                            <span class="bg-[#B59A57]/20 border border-[#B59A57]/50 text-[#B59A57] text-[10px] font-mono px-2 py-0.5 rounded uppercase">
+                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#B59A57]/50 transition-colors">
+                    <div class="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-black/40">
+                        <img src="images/posters/poster-fun-tournament-2026.jpg" alt="Poster Fun Tournament Gaming Garage UTDI 2026" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141C24] via-transparent to-black/30 pointer-events-none"></div>
+                        <div class="absolute top-3 left-3 right-3 flex justify-between items-center pointer-events-none">
+                            <span class="bg-[#B59A57]/30 backdrop-blur-sm border border-[#B59A57]/60 text-[#B59A57] text-[10px] font-mono px-2.5 py-1 rounded uppercase font-bold tracking-wider">
                                 Campus Cup
                             </span>
-                            <span class="text-[11px] font-mono text-[#768079]">31 Jan 2026</span>
+                            <span class="bg-black/70 backdrop-blur-sm border border-white/10 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+                                31 Jan 2026
+                            </span>
                         </div>
-                        <h3 class="text-lg font-bold text-white uppercase">Fun Tournament 2026</h3>
-                        <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Kompetisi resmi cabang Mobile Legends (16 Tim), Tekken 8 (20 Peserta), dan PES (20 Peserta) dengan regulasi fair play.
-                        </p>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white uppercase tracking-tight mb-2">Fun Tournament 2026</h3>
+                            <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
+                                Kompetisi resmi cabang Mobile Legends (16 Tim), Tekken 8 (20 Peserta), dan PES (20 Peserta) dengan sistem kompetitif terstandar.
+                            </p>
+                        </div>
                         <div class="border-t border-[#ECE8E1]/10 pt-3 text-[11px] font-mono text-[#768079] space-y-1">
                             <div class="flex justify-between">
                                 <span>Total Hadiah:</span>
@@ -874,18 +898,26 @@
                 </div>
 
                 <!-- Activity 4: Mobile Legends Player Trial -->
-                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#FF4655]/50 transition-colors">
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-start">
-                            <span class="bg-[#53212B] border border-[#FF4655]/50 text-[#FF4655] text-[10px] font-mono px-2 py-0.5 rounded uppercase">
+                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#FF4655]/50 transition-colors">
+                    <div class="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-black/40">
+                        <img src="images/posters/poster-mlbb-trial.jpg" alt="Poster Mobile Legends Player Trial Gaming Garage UTDI" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141C24] via-transparent to-black/30 pointer-events-none"></div>
+                        <div class="absolute top-3 left-3 right-3 flex justify-between items-center pointer-events-none">
+                            <span class="bg-[#53212B]/90 backdrop-blur-sm border border-[#FF4655]/60 text-[#FF4655] text-[10px] font-mono px-2.5 py-1 rounded uppercase font-bold tracking-wider">
                                 Scrim & Trial
                             </span>
-                            <span class="text-[11px] font-mono text-[#768079]">25 Okt 2025</span>
+                            <span class="bg-black/70 backdrop-blur-sm border border-white/10 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+                                25 Okt 2025
+                            </span>
                         </div>
-                        <h3 class="text-lg font-bold text-white uppercase">MLBB Player Trial</h3>
-                        <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Uji tanding kompetitif atlet Mobile Legends di Lab Gaming Garage UTDI pukul 09.00 WIB dengan akses penonton terbuka untuk umum.
-                        </p>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white uppercase tracking-tight mb-2">MLBB Player Trial</h3>
+                            <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
+                                Uji tanding kompetitif atlet Mobile Legends di Lab Gaming Garage UTDI pukul 09.00 WIB dengan akses penonton terbuka untuk umum.
+                            </p>
+                        </div>
                         <div class="border-t border-[#ECE8E1]/10 pt-3 text-[11px] font-mono text-[#768079] space-y-1">
                             <div class="flex justify-between">
                                 <span>Lokasi:</span>
@@ -900,18 +932,26 @@
                 </div>
 
                 <!-- Activity 5: Open Recruitment Inisiasi -->
-                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl p-6 flex flex-col justify-between hover:border-[#8055FF]/50 transition-colors">
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-start">
-                            <span class="bg-[#8055FF]/20 border border-[#8055FF]/50 text-[#8055FF] text-[10px] font-mono px-2 py-0.5 rounded uppercase">
+                <div class="bg-[#141C24] border border-[#ECE8E1]/10 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-[#8055FF]/50 transition-colors">
+                    <div class="relative aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-black/40">
+                        <img src="images/posters/poster-open-recruitment-2025.jpg" alt="Poster Open Recruitment Inisiasi Gaming Garage UTDI" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#141C24] via-transparent to-black/30 pointer-events-none"></div>
+                        <div class="absolute top-3 left-3 right-3 flex justify-between items-center pointer-events-none">
+                            <span class="bg-[#8055FF]/30 backdrop-blur-sm border border-[#8055FF]/60 text-[#8055FF] text-[10px] font-mono px-2.5 py-1 rounded uppercase font-bold tracking-wider">
                                 Inisiasi Komunitas
                             </span>
-                            <span class="text-[11px] font-mono text-[#768079]">Okt 2025</span>
+                            <span class="bg-black/70 backdrop-blur-sm border border-white/10 text-white text-[11px] font-mono px-2 py-0.5 rounded">
+                                Okt 2025
+                            </span>
                         </div>
-                        <h3 class="text-lg font-bold text-white uppercase">Inisiasi Komunitas UTDI</h3>
-                        <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Pembentukan pondasi 4 divisi: Player Esports, Game Developer, Brand Ambassador/Talent, dan Social Media Management.
-                        </p>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-black text-white uppercase tracking-tight mb-2">Inisiasi Komunitas UTDI</h3>
+                            <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
+                                Pembentukan pondasi 4 divisi: Player Esports, Game Developer, Brand Ambassador/Talent, dan Social Media Management.
+                            </p>
+                        </div>
                         <div class="border-t border-[#ECE8E1]/10 pt-3 text-[11px] font-mono text-[#768079] space-y-1">
                             <div class="flex justify-between">
                                 <span>Basis:</span>
@@ -926,19 +966,28 @@
                 </div>
 
                 <!-- Activity Linktree Hub Card -->
-                <div class="bg-gradient-to-br from-[#141C24] to-[#1F1728] border border-[#FF4655]/30 rounded-xl p-6 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <span class="bg-[#53212B] border border-[#FF4655]/50 text-[#FF4655] text-[10px] font-mono px-2 py-0.5 rounded uppercase inline-block">
+                <div class="bg-gradient-to-br from-[#141C24] via-[#1A1429] to-[#0B1015] border border-[#FF4655]/40 rounded-xl p-8 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#FF4655]/10 rounded-full blur-2xl pointer-events-none"></div>
+                    <div class="space-y-4 relative z-10">
+                        <span class="bg-[#53212B] border border-[#FF4655]/50 text-[#FF4655] text-[10px] font-mono px-2.5 py-1 rounded uppercase inline-block font-bold">
                             Official Portal
                         </span>
-                        <h3 class="text-lg font-bold text-white uppercase">Linktree & Kontak</h3>
+                        <h3 class="text-2xl font-black text-white uppercase tracking-tight">Portal Registrasi & Linktree</h3>
                         <p class="text-xs text-[#ECE8E1]/80 leading-relaxed">
-                            Akses langsung formulir pendaftaran kegiatan, turnamen, dan narahubung resmi panitia Gaming Garage UTDI.
+                            Akses langsung formulir pendaftaran turnamen, open recruitment divisi, info jadwal pertandingan, dan kontak panitia.
                         </p>
+                        <div class="border-t border-[#ECE8E1]/10 pt-4 space-y-2 text-xs font-mono text-[#ECE8E1]/70">
+                            <div>• Instagram: <span class="text-white font-semibold">@gaminggarage.utdi</span></div>
+                            <div>• Narahubung: <span class="text-white font-semibold">Kisus & Virtus</span></div>
+                            <div>• Biaya Registrasi: <span class="text-[#1AE780] font-semibold">100% Free HTM</span></div>
+                        </div>
                     </div>
-                    <div class="pt-6 space-y-2">
-                        <a href="https://linktr.ee/GamingGarageUTDI" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2.5 bg-[#FF4655] text-white text-xs font-mono uppercase font-bold rounded hover:bg-[#FD4556] transition-colors">
+                    <div class="pt-8 space-y-3 relative z-10">
+                        <a href="https://linktr.ee/GamingGarageUTDI" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3 bg-[#FF4655] hover:bg-[#FD4556] text-white text-xs font-mono uppercase font-bold rounded shadow-[0_0_20px_rgba(255,70,85,0.3)] transition-all">
                             Buka Linktree Pendaftaran
+                        </a>
+                        <a href="https://www.instagram.com/gaminggarage.utdi/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2.5 border border-[#ECE8E1]/20 hover:border-[#FF4655] text-white text-xs font-mono uppercase font-bold rounded transition-colors">
+                            Kunjungi Instagram @gaminggarage.utdi
                         </a>
                     </div>
                 </div>
