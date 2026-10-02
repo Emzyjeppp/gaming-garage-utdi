@@ -31,9 +31,10 @@ Official web landing page for the Gaming Garage laboratory ecosystem at Universi
 ## Key Features
 
 - **Clean Modular Frontend**: Separated into semantic markup (`index.html`), custom CSS animation engine (`css/styles.css`), and modular JavaScript interactions (`js/main.js`).
-- **3D Flip Tournament Cards**: Responsive 4-column grid featuring Mobile Legends, Tekken 8, eFootball/PES, and Valorant with hardware specs, rules, and registration links on flip.
-- **Flex Accordion Curriculum**: Interactive expanding modules for Game Developer Academy, Esports Management, and HP Global Certification.
-- **Open Recruitment Showcase**: 4-division community structure for competitive players, game developers, social media managers, and event organizers.
+- **3D Flip Tournament Cards**: Responsive 4-column grid featuring Mobile Legends (16 Tim), Tekken 8 (20 Peserta), eFootball/PES (20 Peserta), and Valorant with hardware specs, rules, and registration links on flip.
+- **Flex Accordion Curriculum**: Interactive expanding modules for Game Developer Academy (Godot Engine & Unity), Esports Management, and HP Global Certification.
+- **Open Recruitment Showcase**: 4-division community structure for competitive players, game developers, social media managers, and event organizers/talent.
+- **Verified Instagram Activity Archive**: Direct showcase of official events from `@gaminggarage.utdi` including Level-Up Weekend (Godot Workshop & Esports), Fun Tournament 2026, MLBB Player Trial, and Open Recruitment phases.
 - **Performance Optimizations**: Removed unused font requests, eliminated inline JavaScript handlers, and enabled responsive viewport scaling.
 
 ## Project Structure
@@ -67,6 +68,8 @@ start index.html
 ## Credits & Links
 
 - **Official Instagram**: [@gaminggarage.utdi](https://www.instagram.com/gaminggarage.utdi/)
+- **Registration Hub**: [Linktree Gaming Garage UTDI](https://linktr.ee/GamingGarageUTDI)
+- **Tournament Contacts**: Kisus (+62 857-8786-8935) & Virtus (+62 878-7723-3700)
 - **Institutions**: Fakultas Teknologi Informasi (FTI) UTDI & HP Inc.
 - **Original Template**: [Aura Build (Cinematic VFX 28)](https://www.aura.build/templates/cinematic-vfx-28)
 - **Visual Assets**: Riot Games / Valorant media kit, Lucide icons, and Google Fonts.
